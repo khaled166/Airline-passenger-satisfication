@@ -62,7 +62,7 @@ for i in range(0,df.shape[1]):
 
 
 #Load model 
-load_model = pickle.load(open("C:\Users\Khaledseif166\Downloads\All  Of ME\Self-Study-Courses\CDSP_Deploma\Final_Project\Airline_passenger\model.pkl"))
+load_model = pickle.load(open("C:/Users/Khaledseif166/Downloads/All  Of ME/Self-Study-Courses/CDSP_Deploma/Final_Project/Airline_passenger/model.pkl","rb"))
    
 
 
