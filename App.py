@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import bz2
 
         
 # All features user input.
@@ -60,7 +61,7 @@ for i in range(0,df.shape[1]):
 
 '''
 #Load model 
-load_model = pickle.load(open("C://Users//Khaledseif166//Downloads//All  Of ME//Self-Study-Courses//CDSP_Deploma//Final_Project//Airline_passenger//model.pkl","rb"))
+load_model = pickle.load(bz2.open("C://Users//Khaledseif166//Downloads//All  Of ME//Self-Study-Courses//CDSP_Deploma//Final_Project//Airline_passenger//model.pkl","rb"))
    
 
 
