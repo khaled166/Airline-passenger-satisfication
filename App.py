@@ -61,7 +61,7 @@ for i in range(0,df.shape[1]):
 
 '''
 #Load model 
-load_model = pickle.load(bz2.BZ2File("model.pkl","rb"))
+load_model = pickle.load(open("model.pkl","rb"))
 
 
 #Prediction results based on input data from user.
