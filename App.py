@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import pickle
 import bz2
-
         
 # All features user input.
 st.title("Passenger Satisfication prediction")
@@ -46,11 +45,10 @@ df = pd.DataFrame({"Gender":[Gender],"CustomerType":[CustomerType],"Age":[Age],"
     
 
 
-df = pd.get_dummies(df,columns = ["Gender","CustomerType","TypeofTravel","Class"])
+#df = pd.get_dummies(df,columns = ["Gender","CustomerType","TypeofTravel","Class"])
 
-'''
-
-transformer = pickle.load(open("C:/Users/Khaledseif166/Downloads/All  Of ME/Self-Study-Courses/CDSP_Deploma/Final_Project/Airline_passenger/Transformer.pkl","rb"))
+    
+transformer = pickle.load(open("C:/Users/khaled_seifaldin/Downloads/FireShot/Airline_passenger/Transformer.pkl","rb"))
     
     
     
@@ -59,9 +57,10 @@ for i in range(0,df.shape[1]):
         df[df.columns[i]] = transformer.fit_transform(df[df.columns[i]])
         
 
-'''
+
 #Load model 
-load_model = pickle.load(bz2.BZ2File("model.pkl","rb"))
+load_model = pickle.load(open("model.pkl","rb"))
+   
 
 
 #Prediction results based on input data from user.
