@@ -59,7 +59,7 @@ for i in range(0,df.shape[1]):
 
 
 #Load model 
-load_model = pickle.load(open("model.pkl","rb"))
+load_model = pickle.load(bz2.open("model.pkl","rb"))
    
 
 
