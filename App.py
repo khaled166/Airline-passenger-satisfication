@@ -48,7 +48,7 @@ df = pd.DataFrame({"Gender":[Gender],"CustomerType":[CustomerType],"Age":[Age],"
 
 
 
-transformer = pickle.load(open("Transformer.pkl","rb"))
+transformer = pickle.load(bz2.BZ2File("Transformer.pkl","rb"))
     
     
     
