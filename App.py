@@ -48,7 +48,7 @@ df = pd.DataFrame({"Gender":[Gender],"CustomerType":[CustomerType],"Age":[Age],"
 #df = pd.get_dummies(df,columns = ["Gender","CustomerType","TypeofTravel","Class"])
 
     
-transformer = pickle.load(open("C:/Users/khaled_seifaldin/Downloads/FireShot/Airline_passenger/Transformer.pkl","rb"))
+transformer = pickle.load(open("Transformer.pkl","rb"))
     
     
     
